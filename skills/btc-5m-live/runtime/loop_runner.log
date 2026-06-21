@@ -1,0 +1,37 @@
+=== BTC 5m loop runner ===
+  Mode:       sequential (1 asset/cycle)
+  Target:     $1000000
+  Floor:      $5
+  Max trades: 500
+  Risk:       0.05 of balance per trade (capped at $100)
+  Log:        skills/btc-5m-live/runtime/loop_pnl.csv
+  Stop with:  Ctrl-C  or  skills/btc-5m-live/scripts/btc5m_ctl.sh stop
+
+Day 2026-06-20 starting balance: $38.27
+[22:16:42Z] iter=1  balance=$38.27
+[22:16:43Z] firing trade: asset=btc stake=$5.00 (base=$5.00 boost=$0.00) threshold=0.65 max_price=0.70
+[22:16:44Z] waiting for trade to complete...
+[22:21:45Z] result=no_entry_timeout asset=btc  pnl=$0.00  trade=0/500  balance_after=$38.27
+[22:21:51Z] iter=2  balance=$38.27
+[22:21:51Z] firing trade: asset=eth stake=$5.00 (base=$5.00 boost=$0.00) threshold=0.65 max_price=0.70
+[22:21:52Z] waiting for trade to complete...
+[22:26:38Z] result=done asset=eth  pnl=$2.32  trade=1/500  balance_after=$40.59
+[22:26:44Z] iter=3  balance=$40.59
+[22:26:44Z] firing trade: asset=sol stake=$14.18 (base=$5.00 boost=$9.18) threshold=0.62 max_price=0.75
+[22:26:45Z] waiting for trade to complete...
+[22:33:07Z] result=done asset=sol  pnl=$-14.10  trade=2/500  balance_after=$26.50
+[22:33:12Z] iter=4  balance=$26.50
+[22:33:12Z] firing trade: asset=xrp stake=$5.00 (base=$5.00 boost=$0.00) threshold=0.65 max_price=0.70
+[22:33:13Z] waiting for trade to complete...
+[22:38:15Z] result=no_entry_timeout asset=xrp  pnl=$0.00  trade=2/500  balance_after=$26.50
+[22:38:21Z] iter=5  balance=$26.50
+[22:38:21Z] firing trade: asset=doge stake=$5.00 (base=$5.00 boost=$0.00) threshold=0.62 max_price=0.75
+[22:38:22Z] waiting for trade to complete...
+[22:48:04Z] result=done asset=doge  pnl=$-7.19  trade=3/500  balance_after=$17.19
+[22:48:10Z] iter=6  balance=$17.19
+🛑 DAILY-LOSS BREAKER. Down 55.1% today ($21.07). Stopping.
+
+=== Loop ended ===
+Final balance: $17.19
+Trades logged:       42 (incl. header)
+PnL log: skills/btc-5m-live/runtime/loop_pnl.csv

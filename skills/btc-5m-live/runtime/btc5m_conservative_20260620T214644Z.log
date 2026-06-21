@@ -1,0 +1,1592 @@
+{
+  "started_at": "2026-06-20T21:46:44.395812Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "max_entry_price": 0.75,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T21:46:44.877453Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.85,
+      "seconds_left": 195.46619391441345,
+      "min_spread": 0.020000000000000018
+    },
+    {
+      "ts": "2026-06-20T21:46:44.877487Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.85,
+      "seconds_left": 195.46619391441345
+    },
+    {
+      "ts": "2026-06-20T21:46:47.287772Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.85,
+      "seconds_left": 193.07906699180603,
+      "min_spread": 0.020000000000000018
+    },
+    {
+      "ts": "2026-06-20T21:46:47.287803Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.85,
+      "seconds_left": 193.07906699180603
+    },
+    {
+      "ts": "2026-06-20T21:46:49.743728Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.86,
+      "seconds_left": 190.6493260860443,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:46:49.743761Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.86,
+      "seconds_left": 190.6493260860443
+    },
+    {
+      "ts": "2026-06-20T21:46:52.211348Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.87,
+      "seconds_left": 188.1192331314087,
+      "min_spread": 0.04000000000000001
+    },
+    {
+      "ts": "2026-06-20T21:46:52.211371Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.17,
+      "clob_down_ask": 0.87,
+      "seconds_left": 188.1192331314087
+    },
+    {
+      "ts": "2026-06-20T21:46:54.627548Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 185.72007989883423,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:46:54.627588Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 185.72007989883423
+    },
+    {
+      "ts": "2026-06-20T21:46:57.082440Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 183.31798696517944,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:46:57.082454Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 183.31798696517944
+    },
+    {
+      "ts": "2026-06-20T21:46:59.555557Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 180.76892805099487,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:46:59.555585Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 180.76892805099487
+    },
+    {
+      "ts": "2026-06-20T21:47:01.973643Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 178.3941330909729,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:47:01.973655Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 178.3941330909729
+    },
+    {
+      "ts": "2026-06-20T21:47:04.421997Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 175.97221899032593,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:47:04.422017Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.87,
+      "seconds_left": 175.97221899032593
+    },
+    {
+      "ts": "2026-06-20T21:47:06.898377Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 173.433748960495,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:47:06.898404Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 173.433748960495
+    },
+    {
+      "ts": "2026-06-20T21:47:09.308367Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 171.0619809627533,
+      "min_spread": 0.020000000000000018
+    },
+    {
+      "ts": "2026-06-20T21:47:09.308394Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 171.0619809627533
+    },
+    {
+      "ts": "2026-06-20T21:47:11.762057Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 168.62855195999146,
+      "min_spread": 0.020000000000000018
+    },
+    {
+      "ts": "2026-06-20T21:47:11.762083Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 168.62855195999146
+    },
+    {
+      "ts": "2026-06-20T21:47:14.215031Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 166.10729002952576,
+      "min_spread": 0.020000000000000018
+    },
+    {
+      "ts": "2026-06-20T21:47:14.215042Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.88,
+      "seconds_left": 166.10729002952576
+    },
+    {
+      "ts": "2026-06-20T21:47:16.645855Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 163.73073601722717,
+      "min_spread": 0.030000000000000013
+    },
+    {
+      "ts": "2026-06-20T21:47:16.645869Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 163.73073601722717
+    },
+    {
+      "ts": "2026-06-20T21:47:19.102125Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 161.29275608062744,
+      "min_spread": 0.030000000000000013
+    },
+    {
+      "ts": "2026-06-20T21:47:19.102150Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 161.29275608062744
+    },
+    {
+      "ts": "2026-06-20T21:47:21.572102Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 158.75484013557434,
+      "min_spread": 0.030000000000000013
+    },
+    {
+      "ts": "2026-06-20T21:47:21.572135Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 158.75484013557434
+    },
+    {
+      "ts": "2026-06-20T21:47:23.984224Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 156.3749659061432,
+      "min_spread": 0.030000000000000013
+    },
+    {
+      "ts": "2026-06-20T21:47:23.984244Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 156.3749659061432
+    },
+    {
+      "ts": "2026-06-20T21:47:26.441598Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 153.95002388954163,
+      "min_spread": 0.030000000000000013
+    },
+    {
+      "ts": "2026-06-20T21:47:26.441628Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.89,
+      "seconds_left": 153.95002388954163
+    },
+    {
+      "ts": "2026-06-20T21:47:28.909417Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.9,
+      "seconds_left": 151.4252049922943,
+      "min_spread": 0.04000000000000001
+    },
+    {
+      "ts": "2026-06-20T21:47:28.909438Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.9,
+      "seconds_left": 151.4252049922943
+    },
+    {
+      "ts": "2026-06-20T21:47:31.345934Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.9,
+      "seconds_left": 149.04265594482422,
+      "min_spread": 0.04000000000000001
+    },
+    {
+      "ts": "2026-06-20T21:47:31.345964Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.14,
+      "clob_down_ask": 0.9,
+      "seconds_left": 149.04265594482422
+    },
+    {
+      "ts": "2026-06-20T21:47:33.781088Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 146.61486887931824,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:47:33.781101Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 146.61486887931824
+    },
+    {
+      "ts": "2026-06-20T21:47:36.246003Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 144.0777850151062,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:47:36.246030Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 144.0777850151062
+    },
+    {
+      "ts": "2026-06-20T21:47:38.688196Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 141.69543409347534,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:47:38.688223Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.9,
+      "seconds_left": 141.69543409347534
+    },
+    {
+      "ts": "2026-06-20T21:47:41.121943Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.91,
+      "seconds_left": 139.26971292495728,
+      "min_spread": 0.04000000000000001
+    },
+    {
+      "ts": "2026-06-20T21:47:41.121966Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.91,
+      "seconds_left": 139.26971292495728
+    },
+    {
+      "ts": "2026-06-20T21:47:43.586828Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.91,
+      "seconds_left": 136.74392700195312,
+      "min_spread": 0.04000000000000001
+    },
+    {
+      "ts": "2026-06-20T21:47:43.586838Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.91,
+      "seconds_left": 136.74392700195312
+    },
+    {
+      "ts": "2026-06-20T21:47:46.014796Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.91,
+      "seconds_left": 134.3586401939392,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:47:46.014811Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.91,
+      "seconds_left": 134.3586401939392
+    },
+    {
+      "ts": "2026-06-20T21:47:48.461423Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.91,
+      "seconds_left": 131.91987991333008,
+      "min_spread": 0.030000000000000027
+    },
+    {
+      "ts": "2026-06-20T21:47:48.461451Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.91,
+      "seconds_left": 131.91987991333008
+    },
+    {
+      "ts": "2026-06-20T21:47:50.947474Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 129.39579486846924,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:47:50.947490Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 129.39579486846924
+    },
+    {
+      "ts": "2026-06-20T21:47:53.356972Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 126.99414300918579,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:47:53.356986Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 126.99414300918579
+    },
+    {
+      "ts": "2026-06-20T21:47:55.808061Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 124.58885598182678,
+      "min_spread": 0.009999999999999995
+    },
+    {
+      "ts": "2026-06-20T21:47:55.808096Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 124.58885598182678
+    },
+    {
+      "ts": "2026-06-20T21:47:58.284732Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 122.06284213066101,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:47:58.284755Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 122.06284213066101
+    },
+    {
+      "ts": "2026-06-20T21:48:00.695451Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 119.65982794761658,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:00.695476Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 119.65982794761658
+    },
+    {
+      "ts": "2026-06-20T21:48:03.141269Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.9,
+      "seconds_left": 117.25415706634521,
+      "min_spread": 0.009999999999999995
+    },
+    {
+      "ts": "2026-06-20T21:48:03.141282Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.9,
+      "seconds_left": 117.25415706634521
+    },
+    {
+      "ts": "2026-06-20T21:48:05.606197Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.9,
+      "seconds_left": 114.73135805130005,
+      "min_spread": 0.009999999999999995
+    },
+    {
+      "ts": "2026-06-20T21:48:05.606231Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.9,
+      "seconds_left": 114.73135805130005
+    },
+    {
+      "ts": "2026-06-20T21:48:08.030370Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 112.333566904068,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:08.030396Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 112.333566904068
+    },
+    {
+      "ts": "2026-06-20T21:48:10.481428Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 109.91958093643188,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:10.481448Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 109.91958093643188
+    },
+    {
+      "ts": "2026-06-20T21:48:12.961080Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 107.3695650100708,
+      "min_spread": 0.01999999999999999
+    },
+    {
+      "ts": "2026-06-20T21:48:12.961095Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 107.3695650100708
+    },
+    {
+      "ts": "2026-06-20T21:48:15.527364Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 104.79962706565857,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:48:15.527380Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 104.79962706565857
+    },
+    {
+      "ts": "2026-06-20T21:48:18.078673Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 102.32566499710083,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:48:18.078692Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 102.32566499710083
+    },
+    {
+      "ts": "2026-06-20T21:48:20.523466Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 99.85477805137634,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:48:20.523474Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 99.85477805137634
+    },
+    {
+      "ts": "2026-06-20T21:48:22.991617Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.92,
+      "seconds_left": 97.34088492393494,
+      "min_spread": 0.05
+    },
+    {
+      "ts": "2026-06-20T21:48:22.991627Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.13,
+      "clob_down_ask": 0.92,
+      "seconds_left": 97.34088492393494
+    },
+    {
+      "ts": "2026-06-20T21:48:25.410645Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 94.9648449420929,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:48:25.410655Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 94.9648449420929
+    },
+    {
+      "ts": "2026-06-20T21:48:27.863378Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 92.53114295005798,
+      "min_spread": 0.039999999999999994
+    },
+    {
+      "ts": "2026-06-20T21:48:27.863402Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.12,
+      "clob_down_ask": 0.92,
+      "seconds_left": 92.53114295005798
+    },
+    {
+      "ts": "2026-06-20T21:48:30.336752Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 90.00173306465149,
+      "min_spread": 0.009999999999999995
+    },
+    {
+      "ts": "2026-06-20T21:48:30.336772Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 90.00173306465149
+    },
+    {
+      "ts": "2026-06-20T21:48:32.748413Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 87.62105917930603,
+      "min_spread": 0.009999999999999995
+    },
+    {
+      "ts": "2026-06-20T21:48:32.748430Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.09,
+      "clob_down_ask": 0.92,
+      "seconds_left": 87.62105917930603
+    },
+    {
+      "ts": "2026-06-20T21:48:35.205603Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 85.18909311294556,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:35.205627Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 85.18909311294556
+    },
+    {
+      "ts": "2026-06-20T21:48:37.716524Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 82.65145611763,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:37.716561Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 82.65145611763
+    },
+    {
+      "ts": "2026-06-20T21:48:40.094327Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 80.23505401611328,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:40.094340Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 80.23505401611328
+    },
+    {
+      "ts": "2026-06-20T21:48:42.544711Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 77.85975909233093,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:42.544728Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 77.85975909233093
+    },
+    {
+      "ts": "2026-06-20T21:48:45.005718Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 75.3217179775238,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:45.005736Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 75.3217179775238
+    },
+    {
+      "ts": "2026-06-20T21:48:47.428894Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 72.9493498802185,
+      "min_spread": 0.03
+    },
+    {
+      "ts": "2026-06-20T21:48:47.428908Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.11,
+      "clob_down_ask": 0.92,
+      "seconds_left": 72.9493498802185
+    },
+    {
+      "ts": "2026-06-20T21:48:49.883891Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 70.5256929397583,
+      "min_spread": 0.020000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:48:49.883915Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 70.5256929397583
+    },
+    {
+      "ts": "2026-06-20T21:48:52.350030Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 67.97418999671936,
+      "min_spread": 0.020000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:48:52.350039Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 67.97418999671936
+    },
+    {
+      "ts": "2026-06-20T21:48:54.766464Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 65.59679007530212,
+      "min_spread": 0.020000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:48:54.766480Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 65.59679007530212
+    },
+    {
+      "ts": "2026-06-20T21:48:57.223884Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 63.18044400215149,
+      "min_spread": 0.020000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:48:57.223896Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 63.18044400215149
+    },
+    {
+      "ts": "2026-06-20T21:48:59.735436Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "heartbeat",
+      "gamma_up": 0.115,
+      "gamma_down": 0.885,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 60.617840051651,
+      "min_spread": 0.020000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:48:59.735451Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.1,
+      "clob_down_ask": 0.92,
+      "seconds_left": 60.617840051651
+    },
+    {
+      "ts": "2026-06-20T21:49:01.802503Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 58.19749999046326,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:03.854614Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 56.14538812637329,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:05.905556Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 54.09444499015808,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:07.965182Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 52.03482007980347,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:10.026877Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 49.97312521934509,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:12.077374Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 47.92262816429138,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:14.121534Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 45.878467082977295,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:16.164300Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 43.83570194244385,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:18.231477Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 41.76852512359619,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:20.335253Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 39.66475009918213,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:22.434002Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 37.56600093841553,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:24.517636Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 35.48236584663391,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:26.634084Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 33.3659188747406,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:28.719920Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 31.280082941055298,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:30.812045Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 29.187957048416138,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:32.921816Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 27.07818603515625,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:35.017457Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 24.982545852661133,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:37.105344Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 22.894658088684082,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:39.212114Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 20.78789186477661,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:41.296409Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 18.70359182357788,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:43.406772Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 16.593231916427612,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:45.508406Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 14.491598129272461,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:47.586882Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 12.413120031356812,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:49.695521Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 10.304481029510498,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:51.791223Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 8.208781003952026,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:53.885600Z",
+      "slug": "doge-updown-5m-1781991900",
+      "status": "skip_too_late_to_enter",
+      "seconds_left": 6.1144020557403564,
+      "min_entry_seconds_left": 60
+    },
+    {
+      "ts": "2026-06-20T21:49:55.987615Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T21:49:58.080629Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T21:50:00.529706Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.55,
+      "seconds_left": 299.82666182518005,
+      "min_spread": 0.11000000000000004
+    },
+    {
+      "ts": "2026-06-20T21:50:00.529733Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.55,
+      "seconds_left": 299.82666182518005
+    },
+    {
+      "ts": "2026-06-20T21:50:02.932472Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.79,
+      "clob_down_ask": 0.55,
+      "seconds_left": 297.4258418083191,
+      "min_spread": 0.25000000000000006
+    },
+    {
+      "ts": "2026-06-20T21:50:02.932519Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.79,
+      "clob_down_ask": 0.55,
+      "seconds_left": 297.4258418083191
+    },
+    {
+      "ts": "2026-06-20T21:50:05.380632Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.51,
+      "clob_down_ask": 0.57,
+      "seconds_left": 295.0086510181427,
+      "min_spread": 0.039999999999999925
+    },
+    {
+      "ts": "2026-06-20T21:50:05.380645Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.51,
+      "clob_down_ask": 0.57,
+      "seconds_left": 295.0086510181427
+    },
+    {
+      "ts": "2026-06-20T21:50:07.838201Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.47,
+      "clob_down_ask": 0.57,
+      "seconds_left": 292.4916501045227,
+      "min_spread": 0.039999999999999925
+    },
+    {
+      "ts": "2026-06-20T21:50:07.838219Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.47,
+      "clob_down_ask": 0.57,
+      "seconds_left": 292.4916501045227
+    },
+    {
+      "ts": "2026-06-20T21:50:10.273610Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.47,
+      "clob_down_ask": 0.54,
+      "seconds_left": 290.09771394729614,
+      "min_spread": 0.009999999999999953
+    },
+    {
+      "ts": "2026-06-20T21:50:10.273638Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.47,
+      "clob_down_ask": 0.54,
+      "seconds_left": 290.09771394729614
+    },
+    {
+      "ts": "2026-06-20T21:50:12.797899Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.45,
+      "clob_down_ask": 0.56,
+      "seconds_left": 287.68079900741577,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:50:12.797915Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.45,
+      "clob_down_ask": 0.56,
+      "seconds_left": 287.68079900741577
+    },
+    {
+      "ts": "2026-06-20T21:50:15.194494Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.45,
+      "clob_down_ask": 0.56,
+      "seconds_left": 285.1448109149933,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T21:50:15.194505Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.45,
+      "clob_down_ask": 0.56,
+      "seconds_left": 285.1448109149933
+    },
+    {
+      "ts": "2026-06-20T21:50:17.604141Z",
+      "slug": "doge-updown-5m-1781992200",
+      "status": "heartbeat",
+      "gamma_up": 0.5,
+      "gamma_down": 0.5,
+      "clob_up_ask": 0.43,
+      "clob_down_ask": 0.65,
+      "seconds_left": 282.7512629032135,
+      "min_spread": 0.08000000000000002
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x49000219097f5b4ea5516ccec27f27d5220688fd44ef4212da75a6ce52de641d\", \"takingAmount\": \"7.85714\", \"makingAmount\": \"4.949998\", \"status\": \"matched\", \"transactionsHashes\": [\"0xca9cbda5e5dbd7124a1d3706d00f977731bddf21cd423d29fc346bcbdc64211a\"], \"success\": true}, \"entry_price\": 0.6299999745454452, \"market_slug\": \"doge-updown-5m-1781992200\", \"token_id\": \"14442846875173032912829829042489931442171220775903979734617796032781210432920\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T21:50:21.465789Z",
+    "market_slug": "doge-updown-5m-1781992200",
+    "market_end_iso": "2026-06-20T21:55:00Z",
+    "side": "DOWN",
+    "token_id": "14442846875173032912829829042489931442171220775903979734617796032781210432920",
+    "entry_price": 0.6463163441150342,
+    "shares": 7.85714,
+    "shares_requested": 7.85714,
+    "cost_usdc": 5.078198,
+    "cost_requested_usdc": 4.949998,
+    "ctf_balance_after_open": 7.85714,
+    "pusd_balance_after_open": 30.962821,
+    "settle_wait_sec": 1.51,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x49000219097f5b4ea5516ccec27f27d5220688fd44ef4212da75a6ce52de641d",
+    "open_tx": "0xca9cbda5e5dbd7124a1d3706d00f977731bddf21cd423d29fc346bcbdc64211a"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T21:55:28.983867Z",
+      "mode": "hold_to_settlement",
+      "redeem_wait_sec": 28.7,
+      "ctf_remaining": 0.0
+    }
+  ],
+  "closed": {
+    "close_reason": "held_to_settlement",
+    "closed_at": "2026-06-20T21:55:28.983839Z",
+    "close_success": true,
+    "close_status": "redeemed",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 7.85714,
+    "close_shares_requested": 7.85714,
+    "close_usdc": 7.85714,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 38.819961,
+    "position_closed_on_chain": true,
+    "close_settle_wait_sec": 28.7,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": 2.778942,
+  "finished_at": "2026-06-20T21:55:28.983874Z",
+  "result": "done"
+}

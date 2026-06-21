@@ -1,0 +1,662 @@
+{
+  "started_at": "2026-06-20T17:40:08.958805Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.58,
+    "max_entry_price": 0.85,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T17:40:09.000788Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:11.066647Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:13.131090Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:15.193890Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:17.271141Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:19.371228Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:21.465340Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:23.570892Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:25.668289Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:27.756193Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:29.852481Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:31.960990Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:34.049157Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:36.149996Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:38.243502Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:40.355771Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:42.438863Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:44.536474Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:46.636013Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:48.736351Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:50.831527Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:52.947384Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:55.029065Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:57.122362Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:40:59.234810Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:01.307513Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:03.420031Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:05.515447Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:07.607785Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:09.706537Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:11.795401Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:13.898093Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:16.001348Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:18.089598Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:20.186328Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:22.274653Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:24.378802Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:26.484432Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:28.578052Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:30.670571Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:32.762661Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:34.868661Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:36.960739Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:39.056323Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:41.159822Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:43.254686Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:45.337653Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:47.441476Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:49.537084Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:51.645542Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:53.739254Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:56.007007Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:41:58.075261Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:00.131441Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:02.189184Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:04.249727Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:06.322053Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:08.423603Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:10.528208Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:12.610986Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:14.713227Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:16.805241Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:18.905142Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:21.001540Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:23.103305Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:25.199655Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:27.291431Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:29.404562Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:31.486541Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:33.588454Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:35.680842Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:37.787746Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:39.885730Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:41.982207Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:44.072870Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:46.167021Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:48.265780Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:50.368896Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:52.492959Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:54.560200Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:56.655715Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:42:58.740891Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:00.844346Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:02.934679Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:05.044725Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:07.136171Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:09.238728Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:11.343731Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:13.436369Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:15.526518Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:17.628783Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:19.726335Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:21.820881Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:23.919438Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:26.023685Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:28.111756Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:30.200569Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:32.296888Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:34.402088Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:36.503747Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:38.610296Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:40.698859Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:42.799943Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:44.880634Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:46.984461Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:49.076205Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:51.191027Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:53.283305Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:55.389589Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:57.480033Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:43:59.573035Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:01.677151Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:03.774025Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:05.873757Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:07.968230Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:10.064174Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:12.158406Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:14.253144Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:16.359914Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:18.451574Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:20.549976Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:22.639903Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:24.742120Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:26.843028Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:28.943744Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:31.039613Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:33.130356Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:35.210616Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:37.328477Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:39.425809Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:41.518814Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:43.610727Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:45.718525Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:47.813121Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:49.908956Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:52.005701Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:54.108060Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:56.194441Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:44:58.309070Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T17:45:00.872712Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "heartbeat",
+      "gamma_up": 0.515,
+      "gamma_down": 0.485,
+      "clob_up_ask": 0.53,
+      "clob_down_ask": 0.48,
+      "seconds_left": 299.6026108264923,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T17:45:00.872732Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.53,
+      "clob_down_ask": 0.48,
+      "seconds_left": 299.6026108264923
+    },
+    {
+      "ts": "2026-06-20T17:45:03.360745Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "heartbeat",
+      "gamma_up": 0.515,
+      "gamma_down": 0.485,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 296.9766778945923,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T17:45:03.360780Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 296.9766778945923
+    },
+    {
+      "ts": "2026-06-20T17:45:05.794411Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "heartbeat",
+      "gamma_up": 0.515,
+      "gamma_down": 0.485,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 294.57796001434326,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T17:45:05.794430Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 294.57796001434326
+    },
+    {
+      "ts": "2026-06-20T17:45:08.212104Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "heartbeat",
+      "gamma_up": 0.515,
+      "gamma_down": 0.485,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 292.14812111854553,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T17:45:08.212116Z",
+      "slug": "btc-updown-5m-1781977500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.55,
+      "clob_down_ask": 0.46,
+      "seconds_left": 292.14812111854553
+    }
+  ],
+  "balance_errors": [],
+  "finished_at": "2026-06-20T17:45:10.213917Z",
+  "result": "no_entry_timeout"
+}

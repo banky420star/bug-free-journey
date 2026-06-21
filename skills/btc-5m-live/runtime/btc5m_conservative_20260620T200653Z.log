@@ -1,0 +1,86 @@
+[py_clob_client_v2] request error: The read operation timed out
+{
+  "started_at": "2026-06-20T20:06:53.764776Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "max_entry_price": 0.75,
+    "stake_usd": 8.44,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T20:06:58.828973Z",
+      "slug": "btc-updown-5m-1781985900",
+      "status": "skip_clob_unavailable",
+      "error": "PolyApiException[status_code=None, error_message=Request exception!]"
+    },
+    {
+      "ts": "2026-06-20T20:07:01.226521Z",
+      "slug": "btc-updown-5m-1781985900",
+      "status": "heartbeat",
+      "gamma_up": 0.495,
+      "gamma_down": 0.505,
+      "clob_up_ask": 0.71,
+      "clob_down_ask": 0.29,
+      "seconds_left": 179.12909317016602,
+      "min_spread": 0.009999999999999953
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x731accbf0395c73e26d23c322ddc1331b35779f362f8ab387da35865f7245cd7\", \"takingAmount\": \"11.154927\", \"makingAmount\": \"7.919998\", \"status\": \"matched\", \"transactionsHashes\": [\"0x19e0bf42ba48027635cb59edb2e081b04a1c121812f1aeafc690af7d41f792ad\"], \"success\": true}, \"entry_price\": 0.7099999847600974, \"market_slug\": \"btc-updown-5m-1781985900\", \"token_id\": \"67150457191617855976323012657688408957103775278490069359394452637456884322947\", \"side\": \"UP\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 8.0, \"budget_usd\": 8.44, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T20:07:05.162434Z",
+    "market_slug": "btc-updown-5m-1781985900",
+    "market_end_iso": "2026-06-20T20:10:00Z",
+    "side": "UP",
+    "token_id": "67150457191617855976323012657688408957103775278490069359394452637456884322947",
+    "entry_price": 0.7244124502114626,
+    "shares": 11.154927,
+    "shares_requested": 11.154927,
+    "cost_usdc": 8.080768,
+    "cost_requested_usdc": 7.919998,
+    "ctf_balance_after_open": 11.154927,
+    "pusd_balance_after_open": 14.103569,
+    "settle_wait_sec": 1.69,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x731accbf0395c73e26d23c322ddc1331b35779f362f8ab387da35865f7245cd7",
+    "open_tx": "0x19e0bf42ba48027635cb59edb2e081b04a1c121812f1aeafc690af7d41f792ad"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T20:11:10.797084Z",
+      "mode": "hold_to_settlement",
+      "redeem_wait_sec": 69.11,
+      "ctf_remaining": 0.0
+    }
+  ],
+  "closed": {
+    "close_reason": "held_to_settlement",
+    "closed_at": "2026-06-20T20:11:10.797064Z",
+    "close_success": true,
+    "close_status": "redeemed",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 11.154927,
+    "close_shares_requested": 11.154927,
+    "close_usdc": 11.154927,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 25.258496,
+    "position_closed_on_chain": true,
+    "close_settle_wait_sec": 69.11,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": 3.074159,
+  "finished_at": "2026-06-20T20:11:10.797094Z",
+  "result": "done"
+}

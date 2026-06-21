@@ -1,0 +1,84 @@
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+{
+  "started_at": "2026-06-20T15:18:21.116653Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T15:18:22.135392Z",
+      "slug": "btc-updown-5m-1781968500",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.62,
+      "clob_down_ask": 0.44,
+      "seconds_left": 98.36303901672363,
+      "min_spread": 0.05999999999999994
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x5884f6989d4f0d2fd045a865fb920d0911e8ad87c0d786c03b3cf29193010003\", \"takingAmount\": \"6.036583\", \"makingAmount\": \"4.949998\", \"status\": \"matched\", \"transactionsHashes\": [\"0x04b67df389492b0ab8caa77ec91a2a45b281aff53b9edfe2b0239673cadd453a\"], \"success\": true}, \"entry_price\": 0.8199999900606021, \"market_slug\": \"btc-updown-5m-1781968500\", \"token_id\": \"22532102773971443542069668459921633138230534809601663899379831463409937801801\", \"side\": \"UP\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T15:18:26.505256Z",
+    "market_slug": "btc-updown-5m-1781968500",
+    "market_end_iso": "2026-06-20T15:20:00Z",
+    "side": "UP",
+    "token_id": "22532102773971443542069668459921633138230534809601663899379831463409937801801",
+    "entry_price": 0.8199999900606021,
+    "shares": 0.0,
+    "shares_requested": 6.036583,
+    "cost_usdc": 0.0,
+    "cost_requested_usdc": 4.949998,
+    "ctf_balance_after_open": 0.0,
+    "pusd_balance_after_open": 28.582484,
+    "open_order_id": "0x5884f6989d4f0d2fd045a865fb920d0911e8ad87c0d786c03b3cf29193010003",
+    "open_tx": "0x04b67df389492b0ab8caa77ec91a2a45b281aff53b9edfe2b0239673cadd453a"
+  },
+  "stop_loss_price": 0.6149999925454516,
+  "last_side_price": 0.485,
+  "last_check_at": "2026-06-20T15:18:26.545309Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T15:18:27.162293Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "skipped",
+      "close_skipped": "zero_effective_shares",
+      "dust_close_detected": true
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"zero_effective_shares\", \"order_post_result\": {\"success\": false, \"status\": \"skipped\"}, \"market_slug\": \"btc-updown-5m-1781968500\", \"token_id\": \"22532102773971443542069668459921633138230534809601663899379831463409937801801\"}\n\n",
+  "closed": {
+    "close_reason": "stop_loss_25pct",
+    "closed_at": "2026-06-20T15:18:27.718629Z",
+    "close_success": true,
+    "close_status": "skipped",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 0.0,
+    "close_shares_requested": 0.0,
+    "close_usdc": 0.0,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 28.582484,
+    "position_closed_on_chain": true,
+    "close_skipped": "zero_effective_shares"
+  },
+  "realized_cashflow_pnl_usdc": 0.0,
+  "finished_at": "2026-06-20T15:18:27.718674Z",
+  "result": "done"
+}

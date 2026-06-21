@@ -1,0 +1,93 @@
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+{
+  "started_at": "2026-06-20T15:27:19.078155Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T15:27:20.181613Z",
+      "slug": "btc-updown-5m-1781969100",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.32,
+      "clob_down_ask": 0.69,
+      "seconds_left": 160.4350700378418,
+      "min_spread": 0.009999999999999898
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x17c12c5dc94465933a940b9d6f2574928b48428988e61340442176c0aafb4478\", \"takingAmount\": \"7.5\", \"makingAmount\": \"4.95\", \"status\": \"matched\", \"transactionsHashes\": [\"0x93cd9ec87060ef492e1f79f43fbcf2a5a8e693621889bf782ff7932d6ff4664b\"], \"success\": true}, \"entry_price\": 0.66, \"market_slug\": \"btc-updown-5m-1781969100\", \"token_id\": \"35758857490831948238372419635456101091878068428051613275750768388745338596377\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T15:27:24.717546Z",
+    "market_slug": "btc-updown-5m-1781969100",
+    "market_end_iso": "2026-06-20T15:30:00Z",
+    "side": "DOWN",
+    "token_id": "35758857490831948238372419635456101091878068428051613275750768388745338596377",
+    "entry_price": 0.675708,
+    "shares": 7.5,
+    "shares_requested": 7.5,
+    "cost_usdc": 5.06781,
+    "cost_requested_usdc": 4.95,
+    "ctf_balance_after_open": 7.5,
+    "pusd_balance_after_open": 24.467846,
+    "settle_wait_sec": 2.31,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x17c12c5dc94465933a940b9d6f2574928b48428988e61340442176c0aafb4478",
+    "open_tx": "0x93cd9ec87060ef492e1f79f43fbcf2a5a8e693621889bf782ff7932d6ff4664b"
+  },
+  "stop_loss_price": 0.5067809999999999,
+  "last_side_price": 0.855,
+  "last_check_at": "2026-06-20T15:29:38.980473Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T15:29:43.321722Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:29:47.080714Z",
+      "attempt": 2,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": "",
+      "dust_close_detected": true
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"success\": false, \"status\": \"error\", \"errorMsg\": \"PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 0, order amount: 7500000'}]\"}, \"market_slug\": \"btc-updown-5m-1781969100\", \"token_id\": \"35758857490831948238372419635456101091878068428051613275750768388745338596377\", \"side\": \"SELL\", \"price\": 0.01, \"size\": 7.5, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={\"error\":\"not enough balance / allowance: the balance is not enough -\\u003e balance: 0, order amount: 7500000\"}\n",
+  "closed": {
+    "close_reason": "time_exit_20s_before_end",
+    "closed_at": "2026-06-20T15:29:47.753735Z",
+    "close_success": true,
+    "close_status": null,
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 7.5,
+    "close_shares_requested": 0.0,
+    "close_usdc": 7.10007,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 31.567916,
+    "position_closed_on_chain": true,
+    "close_skipped": null
+  },
+  "realized_cashflow_pnl_usdc": 2.03226,
+  "finished_at": "2026-06-20T15:29:47.753811Z",
+  "result": "done"
+}

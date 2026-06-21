@@ -1,0 +1,141 @@
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+{
+  "started_at": "2026-06-20T15:44:56.966983Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T15:44:57.452118Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T15:44:59.573195Z",
+      "status": "heartbeat_no_current_market"
+    },
+    {
+      "ts": "2026-06-20T15:45:02.000023Z",
+      "slug": "btc-updown-5m-1781970300",
+      "status": "heartbeat",
+      "gamma_up": 0.495,
+      "gamma_down": 0.505,
+      "clob_up_ask": 0.56,
+      "clob_down_ask": 0.45,
+      "seconds_left": 298.33154797554016,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T15:45:02.000049Z",
+      "slug": "btc-updown-5m-1781970300",
+      "status": "skip_price_below_threshold",
+      "threshold": 0.62,
+      "clob_up_ask": 0.56,
+      "clob_down_ask": 0.45,
+      "seconds_left": 298.33154797554016
+    },
+    {
+      "ts": "2026-06-20T15:45:04.411222Z",
+      "slug": "btc-updown-5m-1781970300",
+      "status": "heartbeat",
+      "gamma_up": 0.495,
+      "gamma_down": 0.505,
+      "clob_up_ask": 0.58,
+      "clob_down_ask": 0.43,
+      "seconds_left": 295.9496920108795,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T15:45:04.411248Z",
+      "slug": "btc-updown-5m-1781970300",
+      "status": "skip_price_below_threshold",
+      "threshold": 0.62,
+      "clob_up_ask": 0.58,
+      "clob_down_ask": 0.43,
+      "seconds_left": 295.9496920108795
+    },
+    {
+      "ts": "2026-06-20T15:45:06.866063Z",
+      "slug": "btc-updown-5m-1781970300",
+      "status": "heartbeat",
+      "gamma_up": 0.495,
+      "gamma_down": 0.505,
+      "clob_up_ask": 0.63,
+      "clob_down_ask": 0.38,
+      "seconds_left": 293.51942920684814,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0xc98c41b0d575885af31768cca4834b0aba9b60940a8441b0d41ab7123f4ed218\", \"takingAmount\": \"7.615382\", \"makingAmount\": \"4.949998\", \"status\": \"matched\", \"transactionsHashes\": [\"0x46875da130adad251d9ecea05a9a411a1de40dd25ff8e08d73fa2a16abd9c9c9\"], \"success\": true}, \"entry_price\": 0.649999960606047, \"market_slug\": \"btc-updown-5m-1781970300\", \"token_id\": \"11883686110853704426041415979021107752297254351334333241324382215880971678736\", \"side\": \"UP\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T15:45:10.706452Z",
+    "market_slug": "btc-updown-5m-1781970300",
+    "market_end_iso": "2026-06-20T15:50:00Z",
+    "side": "UP",
+    "token_id": "11883686110853704426041415979021107752297254351334333241324382215880971678736",
+    "entry_price": 0.6659243095093588,
+    "shares": 7.615382,
+    "shares_requested": 7.615382,
+    "cost_usdc": 5.071268,
+    "cost_requested_usdc": 4.949998,
+    "ctf_balance_after_open": 7.615382,
+    "pusd_balance_after_open": 29.922952,
+    "settle_wait_sec": 1.67,
+    "balance_unconfirmed": false,
+    "open_order_id": "0xc98c41b0d575885af31768cca4834b0aba9b60940a8441b0d41ab7123f4ed218",
+    "open_tx": "0x46875da130adad251d9ecea05a9a411a1de40dd25ff8e08d73fa2a16abd9c9c9"
+  },
+  "stop_loss_price": 0.4994432321320191,
+  "last_side_price": 0.495,
+  "last_check_at": "2026-06-20T15:45:10.760298Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T15:45:12.807499Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:45:16.540257Z",
+      "attempt": 2,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": "",
+      "dust_close_detected": true
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"success\": false, \"status\": \"error\", \"errorMsg\": \"PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 5382, order amount: 7610000'}]\"}, \"market_slug\": \"btc-updown-5m-1781970300\", \"token_id\": \"11883686110853704426041415979021107752297254351334333241324382215880971678736\", \"side\": \"SELL\", \"price\": 0.01, \"size\": 7.61, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={\"error\":\"not enough balance / allowance: the balance is not enough -\\u003e balance: 5382, order amount: 7610000\"}\n",
+  "closed": {
+    "close_reason": "stop_loss_25pct",
+    "closed_at": "2026-06-20T15:45:17.026750Z",
+    "close_success": true,
+    "close_status": null,
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 7.61,
+    "close_shares_requested": 0.0,
+    "close_usdc": 4.67013,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.005382,
+    "pusd_balance_after_close": 34.593082,
+    "position_closed_on_chain": true,
+    "close_skipped": null
+  },
+  "realized_cashflow_pnl_usdc": -0.401138,
+  "finished_at": "2026-06-20T15:45:17.026764Z",
+  "result": "done"
+}

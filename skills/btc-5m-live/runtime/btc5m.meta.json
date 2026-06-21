@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-06-20T22:38:21Z",
+  "pid": 96632,
+  "profile": "conservative",
+  "entryTimeoutMin": 5,
+  "pollSec": 2,
+  "closeRetryMax": 30,
+  "closeRetryDelaySec": 2,
+  "log": "/Volumes/AI_DRIVE/polly/skills/btc-5m-live/runtime/btc5m_conservative_20260620T223821Z.log",
+  "repo": "/Volumes/AI_DRIVE/polly/pm-hl-conservative-plus-repo"
+}

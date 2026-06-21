@@ -20,15 +20,9 @@ pm-hl-conservative-plus-repo/.venv/
 .AppleDouble
 .LSOverride
 
-# === Runtime state (trade logs, PnL history, pidfiles, scratch) ===
-skills/btc-5m-live/runtime/*.log
-skills/btc-5m-live/runtime/*.csv
-skills/btc-5m-live/runtime/*.csv.backup-*
+# === Runtime state (pidfiles + scratch only — keep logs + CSV history) ===
 skills/btc-5m-live/runtime/*.pid
-skills/btc-5m-live/runtime/*.json
-skills/btc-5m-live/runtime/btc5m_*.log
-skills/btc-5m-live/runtime/loop_runner.log
-skills/btc-5m-live/runtime/latest.log
+skills/btc-5m-live/runtime/par_*.pid
 
 # === Editor / IDE ===
 .vscode/

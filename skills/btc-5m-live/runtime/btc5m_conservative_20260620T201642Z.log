@@ -1,0 +1,142 @@
+{
+  "started_at": "2026-06-20T20:16:42.364839Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "max_entry_price": 0.75,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T20:16:42.877204Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.52,
+      "clob_down_ask": 0.52,
+      "seconds_left": 197.58778190612793,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T20:16:42.877228Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.52,
+      "clob_down_ask": 0.52,
+      "seconds_left": 197.58778190612793
+    },
+    {
+      "ts": "2026-06-20T20:16:45.287357Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.52,
+      "seconds_left": 195.0595178604126,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T20:16:45.287389Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.52,
+      "seconds_left": 195.0595178604126
+    },
+    {
+      "ts": "2026-06-20T20:16:47.742413Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.52,
+      "seconds_left": 192.66114497184753,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T20:16:47.742422Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "skip_price_outside_band",
+      "threshold": 0.62,
+      "max_entry_price": 0.75,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.52,
+      "seconds_left": 192.66114497184753
+    },
+    {
+      "ts": "2026-06-20T20:16:50.225643Z",
+      "slug": "eth-updown-5m-1781986500",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.33,
+      "clob_down_ask": 0.68,
+      "seconds_left": 190.11085319519043,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x5e46e345ce813706aa3407fd0b1a130daef4c0f0a9a49ef0fcd31e907fee5d4f\", \"takingAmount\": \"7.279409\", \"makingAmount\": \"4.949998\", \"status\": \"matched\", \"transactionsHashes\": [\"0x58a3760edefffa93e372dbe6d495ec97aebd8263454103ec2cc6ca6dcc66ab84\"], \"success\": true}, \"entry_price\": 0.6799999835151452, \"market_slug\": \"eth-updown-5m-1781986500\", \"token_id\": \"78946076650852861201102047489360627490180262375479795110167333085095063841727\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T20:16:54.357102Z",
+    "market_slug": "eth-updown-5m-1781986500",
+    "market_end_iso": "2026-06-20T20:20:00Z",
+    "side": "DOWN",
+    "token_id": "78946076650852861201102047489360627490180262375479795110167333085095063841727",
+    "entry_price": 0.6952306155623348,
+    "shares": 7.279409,
+    "shares_requested": 7.279409,
+    "cost_usdc": 5.060868,
+    "cost_requested_usdc": 4.949998,
+    "ctf_balance_after_open": 7.279409,
+    "pusd_balance_after_open": 21.236552,
+    "settle_wait_sec": 1.54,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x5e46e345ce813706aa3407fd0b1a130daef4c0f0a9a49ef0fcd31e907fee5d4f",
+    "open_tx": "0x58a3760edefffa93e372dbe6d495ec97aebd8263454103ec2cc6ca6dcc66ab84"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T20:21:31.268707Z",
+      "mode": "hold_to_settlement",
+      "redeem_wait_sec": 90.38,
+      "ctf_remaining": 7.279409
+    }
+  ],
+  "closed": {
+    "close_reason": "held_to_settlement",
+    "closed_at": "2026-06-20T20:21:31.268678Z",
+    "close_success": false,
+    "close_status": "worthless",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 0.0,
+    "close_shares_requested": 7.279409,
+    "close_usdc": 7.734375,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 7.279409,
+    "pusd_balance_after_close": 28.970927,
+    "position_closed_on_chain": false,
+    "close_settle_wait_sec": 90.38,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": 2.673507,
+  "finished_at": "2026-06-20T20:21:31.268720Z",
+  "result": "done"
+}

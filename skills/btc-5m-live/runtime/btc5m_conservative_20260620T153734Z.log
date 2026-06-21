@@ -1,0 +1,100 @@
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+{
+  "started_at": "2026-06-20T15:37:34.891740Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T15:37:35.731925Z",
+      "slug": "btc-updown-5m-1781969700",
+      "status": "heartbeat",
+      "gamma_up": 0.325,
+      "gamma_down": 0.675,
+      "clob_up_ask": 0.3,
+      "clob_down_ask": 0.71,
+      "seconds_left": 144.60738801956177,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x45aeec1d002fa72f611befc9901f73e5b8a24284ce9a9602bf703990445dcdc1\", \"takingAmount\": \"7.071426\", \"makingAmount\": \"4.949998\", \"status\": \"matched\", \"transactionsHashes\": [\"0x235b7cb8cbc4cc8212967d71a9a45b4ca7ea1b1bef21318ca67740480963dded\"], \"success\": true}, \"entry_price\": 0.6999999717171614, \"market_slug\": \"btc-updown-5m-1781969700\", \"token_id\": \"12108719080256006938154917643221169207155654268659186406860116650218129566353\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T15:37:39.698030Z",
+    "market_slug": "btc-updown-5m-1781969700",
+    "market_end_iso": "2026-06-20T15:40:00Z",
+    "side": "DOWN",
+    "token_id": "12108719080256006938154917643221169207155654268659186406860116650218129566353",
+    "entry_price": 0.7146985629206896,
+    "shares": 7.071426,
+    "shares_requested": 7.071426,
+    "cost_usdc": 5.053938,
+    "cost_requested_usdc": 4.949998,
+    "ctf_balance_after_open": 7.071426,
+    "pusd_balance_after_open": 26.513978,
+    "settle_wait_sec": 0.88,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x45aeec1d002fa72f611befc9901f73e5b8a24284ce9a9602bf703990445dcdc1",
+    "open_tx": "0x235b7cb8cbc4cc8212967d71a9a45b4ca7ea1b1bef21318ca67740480963dded"
+  },
+  "stop_loss_price": 0.5360239221905172,
+  "last_side_price": 0.675,
+  "last_check_at": "2026-06-20T15:39:39.278485Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T15:39:47.662495Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:39:51.631854Z",
+      "attempt": 2,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:39:55.192695Z",
+      "attempt": 3,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": "",
+      "dust_close_detected": true
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"success\": false, \"status\": \"error\", \"errorMsg\": \"PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 1426, order amount: 7070000'}]\"}, \"market_slug\": \"btc-updown-5m-1781969700\", \"token_id\": \"12108719080256006938154917643221169207155654268659186406860116650218129566353\", \"side\": \"SELL\", \"price\": 0.01, \"size\": 7.07, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={\"error\":\"not enough balance / allowance: the balance is not enough -\\u003e balance: 1426, order amount: 7070000\"}\n",
+  "closed": {
+    "close_reason": "time_exit_20s_before_end",
+    "closed_at": "2026-06-20T15:39:55.856495Z",
+    "close_success": true,
+    "close_status": null,
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 7.07,
+    "close_shares_requested": 0.0,
+    "close_usdc": 6.54289,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.001426,
+    "pusd_balance_after_close": 33.056868,
+    "position_closed_on_chain": true,
+    "close_skipped": null
+  },
+  "realized_cashflow_pnl_usdc": 1.488952,
+  "finished_at": "2026-06-20T15:39:55.856539Z",
+  "result": "done"
+}

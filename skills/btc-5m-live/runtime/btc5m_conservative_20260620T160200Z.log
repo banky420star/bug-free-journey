@@ -1,0 +1,82 @@
+{
+  "started_at": "2026-06-20T16:02:01.198884Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T16:02:01.600178Z",
+      "slug": "btc-updown-5m-1781971200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.05,
+      "clob_down_ask": 0.96,
+      "seconds_left": 178.75198197364807,
+      "min_spread": 0.010000000000000002
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x8b0ae27c0f2d6b963bf7c1932e9ef69f1389fb83437def26765ca8034cc5b3b7\", \"takingAmount\": \"5.21052\", \"makingAmount\": \"4.949994\", \"status\": \"matched\", \"transactionsHashes\": [\"0xd69758a6c4ef7c835caafa20ea347846d4b376300d5f5ec3450b4569c1cfc9a0\"], \"success\": true}, \"entry_price\": 0.9500000000000001, \"market_slug\": \"btc-updown-5m-1781971200\", \"token_id\": \"114601620874969286734276210891407367865468735997882957138978023313936319618366\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T16:02:04.747978Z",
+    "market_slug": "btc-updown-5m-1781971200",
+    "market_end_iso": "2026-06-20T16:05:00Z",
+    "side": "DOWN",
+    "token_id": "114601620874969286734276210891407367865468735997882957138978023313936319618366",
+    "entry_price": 0.9533240444331851,
+    "shares": 5.210520000000001,
+    "shares_requested": 5.21052,
+    "cost_usdc": 4.967314,
+    "cost_requested_usdc": 4.949994,
+    "ctf_balance_after_open": 5.25405,
+    "pusd_balance_after_open": 28.520139,
+    "settle_wait_sec": 0.91,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x8b0ae27c0f2d6b963bf7c1932e9ef69f1389fb83437def26765ca8034cc5b3b7",
+    "open_tx": "0xd69758a6c4ef7c835caafa20ea347846d4b376300d5f5ec3450b4569c1cfc9a0"
+  },
+  "stop_loss_price": 0.7149930333248888,
+  "last_side_price": 0.495,
+  "last_check_at": "2026-06-20T16:02:04.788220Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T16:02:06.297673Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "matched",
+      "close_skipped": ""
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0xa23d0520517aae4f3336604611633a455fb47e8b58d269c119544412a05e5165\", \"takingAmount\": \"4.8453\", \"makingAmount\": \"5.21\", \"status\": \"matched\", \"transactionsHashes\": [\"0x7d92af64407bc7a5b157d388222341acbc81c9bc435be267a36a123225da6c70\"], \"success\": true}, \"market_slug\": \"btc-updown-5m-1781971200\", \"token_id\": \"114601620874969286734276210891407367865468735997882957138978023313936319618366\", \"side\": \"SELL\", \"price\": 0.01, \"size\": 5.21, \"neg_risk\": false, \"execute\": true}\n\n",
+  "closed": {
+    "close_reason": "stop_loss_25pct",
+    "closed_at": "2026-06-20T16:02:08.398504Z",
+    "close_success": true,
+    "close_status": "matched",
+    "close_order_id": "0xa23d0520517aae4f3336604611633a455fb47e8b58d269c119544412a05e5165",
+    "close_tx": "0x7d92af64407bc7a5b157d388222341acbc81c9bc435be267a36a123225da6c70",
+    "close_shares": 5.21,
+    "close_shares_requested": 5.21,
+    "close_usdc": 4.82156,
+    "close_usdc_requested": 4.8453,
+    "ctf_remaining": 0.04405,
+    "pusd_balance_after_close": 33.341699,
+    "position_closed_on_chain": false,
+    "close_settle_wait_sec": 2.1,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": -0.145754,
+  "finished_at": "2026-06-20T16:02:08.398531Z",
+  "result": "done"
+}

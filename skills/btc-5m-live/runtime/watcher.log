@@ -1,0 +1,6 @@
+[22:14:18Z] watcher started — will restart bot when combined losses exceed $55
+[22:14:18Z] combined losses=$84.26 exceeded $55 — restarting bot
+[22:14:18Z] run_to_target.sh stopped
+[22:14:20Z] waiting for in-flight trade to settle...
+[22:16:41Z] in-flight trade settled
+[22:16:41Z] bot restarted pid=91276 with new per-asset settings

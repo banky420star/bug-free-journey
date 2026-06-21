@@ -1,0 +1,247 @@
+{
+  "started_at": "2026-06-20T19:21:39.052923Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.58,
+    "max_entry_price": 0.85,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T19:21:39.476157Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 200.90146207809448,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:39.476172Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 200.90146207809448
+    },
+    {
+      "ts": "2026-06-20T19:21:41.945648Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 198.37581300735474,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:41.945665Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 198.37581300735474
+    },
+    {
+      "ts": "2026-06-20T19:21:44.359907Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 196.00762391090393,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:44.359922Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 196.00762391090393
+    },
+    {
+      "ts": "2026-06-20T19:21:46.816320Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 193.59377312660217,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:46.816332Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 193.59377312660217
+    },
+    {
+      "ts": "2026-06-20T19:21:49.270361Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 191.05221700668335,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:49.270376Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 191.05221700668335
+    },
+    {
+      "ts": "2026-06-20T19:21:51.703764Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 188.67078304290771,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:51.703779Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 188.67078304290771
+    },
+    {
+      "ts": "2026-06-20T19:21:54.158105Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 186.25512504577637,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:54.158143Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.48,
+      "clob_down_ask": 0.53,
+      "seconds_left": 186.25512504577637
+    },
+    {
+      "ts": "2026-06-20T19:21:56.642408Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.5,
+      "seconds_left": 183.6962811946869,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T19:21:56.642418Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "skip_price_outside_band",
+      "threshold": 0.58,
+      "max_entry_price": 0.85,
+      "clob_up_ask": 0.49,
+      "clob_down_ask": 0.5,
+      "seconds_left": 183.6962811946869
+    },
+    {
+      "ts": "2026-06-20T19:21:59.040219Z",
+      "slug": "sol-updown-5m-1781983200",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.58,
+      "clob_down_ask": 0.43,
+      "seconds_left": 181.31070804595947,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0xc30333359a22649301d4930552cdc18aa4073f1651536a41fc4cd054c6220010\", \"takingAmount\": \"9.166665\", \"makingAmount\": \"4.949999\", \"status\": \"matched\", \"transactionsHashes\": [\"0x2d066dfa3a1bdf0a705f292a7b9b79c3640a3036cf073b294ed32e1cb6836bf3\"], \"success\": true}, \"entry_price\": 0.5399999890909071, \"market_slug\": \"sol-updown-5m-1781983200\", \"token_id\": \"106283375854773961755166468427177057035344146061890704440091852876641462137317\", \"side\": \"UP\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T19:22:04.119103Z",
+    "market_slug": "sol-updown-5m-1781983200",
+    "market_end_iso": "2026-06-20T19:25:00Z",
+    "side": "UP",
+    "token_id": "106283375854773961755166468427177057035344146061890704440091852876641462137317",
+    "entry_price": 0.5573869013430729,
+    "shares": 9.166665,
+    "shares_requested": 9.166665,
+    "cost_usdc": 5.109379,
+    "cost_requested_usdc": 4.949999,
+    "ctf_balance_after_open": 9.166665,
+    "pusd_balance_after_open": 11.272382,
+    "settle_wait_sec": 2.91,
+    "balance_unconfirmed": false,
+    "open_order_id": "0xc30333359a22649301d4930552cdc18aa4073f1651536a41fc4cd054c6220010",
+    "open_tx": "0x2d066dfa3a1bdf0a705f292a7b9b79c3640a3036cf073b294ed32e1cb6836bf3"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T19:26:03.085745Z",
+      "mode": "hold_to_settlement",
+      "redeem_wait_sec": 62.31,
+      "ctf_remaining": 0.0
+    }
+  ],
+  "closed": {
+    "close_reason": "held_to_settlement",
+    "closed_at": "2026-06-20T19:26:03.085703Z",
+    "close_success": true,
+    "close_status": "redeemed",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 9.166665,
+    "close_shares_requested": 9.166665,
+    "close_usdc": 9.166665,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 20.439047,
+    "position_closed_on_chain": true,
+    "close_settle_wait_sec": 62.31,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": 4.057286,
+  "finished_at": "2026-06-20T19:26:03.085753Z",
+  "result": "done"
+}

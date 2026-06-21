@@ -1,0 +1,736 @@
+{
+  "started_at": "2026-06-20T17:25:06.879868Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.58,
+    "max_entry_price": 0.85,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T17:25:07.275489Z",
+      "slug": "btc-updown-5m-1781976300",
+      "status": "heartbeat",
+      "gamma_up": 0.505,
+      "gamma_down": 0.495,
+      "clob_up_ask": 0.4,
+      "clob_down_ask": 0.61,
+      "seconds_left": 293.07506680488586,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x3385459c49577aba9ce434ec1e2b1b2ff07e7806dab3e7731c1d411e5bb85058\", \"takingAmount\": \"8.389829\", \"makingAmount\": \"4.949999\", \"status\": \"matched\", \"transactionsHashes\": [\"0xc1eaeb9a4c89a2cd2d900bfae0ef9d3601b9b1cc125952d917c73835f6ad0c2e\"], \"success\": true}, \"entry_price\": 0.5899999868888864, \"market_slug\": \"btc-updown-5m-1781976300\", \"token_id\": \"115535270859794069456226299839288618193925334978494002922374605765640323253716\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T17:25:11.054473Z",
+    "market_slug": "btc-updown-5m-1781976300",
+    "market_end_iso": "2026-06-20T17:30:00Z",
+    "side": "DOWN",
+    "token_id": "115535270859794069456226299839288618193925334978494002922374605765640323253716",
+    "entry_price": 0.6069323939737031,
+    "shares": 8.389829,
+    "shares_requested": 8.389829,
+    "cost_usdc": 5.092059,
+    "cost_requested_usdc": 4.949999,
+    "ctf_balance_after_open": 8.389829,
+    "pusd_balance_after_open": 46.56313,
+    "settle_wait_sec": 1.58,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x3385459c49577aba9ce434ec1e2b1b2ff07e7806dab3e7731c1d411e5bb85058",
+    "open_tx": "0xc1eaeb9a4c89a2cd2d900bfae0ef9d3601b9b1cc125952d917c73835f6ad0c2e"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T17:29:57.225554Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:29:58.641309Z",
+      "attempt": 1,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:30:03.987075Z",
+      "attempt": 1,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xc9731fade6c540258e30607b3aaa8b62eca32da5910cfd4a38a71f17c0860ea4"
+    },
+    {
+      "ts": "2026-06-20T17:30:05.521679Z",
+      "attempt": 1,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:30:09.108850Z",
+      "attempt": 2,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:30:10.539331Z",
+      "attempt": 2,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:30:15.851906Z",
+      "attempt": 2,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x8b42078061d3aed7769434b263ccc20622ca5197f6e6463633edc71be8d34e16"
+    },
+    {
+      "ts": "2026-06-20T17:30:17.213178Z",
+      "attempt": 2,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:30:20.841133Z",
+      "attempt": 3,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:30:22.278191Z",
+      "attempt": 3,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:30:27.397211Z",
+      "attempt": 3,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x1d02c95437990a96e00e349d7ff4e19ca1b505f391ac4d9e73a57f62cfee0386"
+    },
+    {
+      "ts": "2026-06-20T17:30:28.693890Z",
+      "attempt": 3,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:30:32.271172Z",
+      "attempt": 4,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:30:33.570371Z",
+      "attempt": 4,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:30:38.927621Z",
+      "attempt": 4,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x9b238da9e4154b4ea055a5034762b95312c94e528c854a18430b06bde0ad5021"
+    },
+    {
+      "ts": "2026-06-20T17:30:40.109211Z",
+      "attempt": 4,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:30:45.810449Z",
+      "attempt": 5,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:30:47.898839Z",
+      "attempt": 5,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:30:52.961746Z",
+      "attempt": 5,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x94909745b82c63b5de40b0f2acedb48c9bc8b118c0cda6ea2753758ef0fd6b6b"
+    },
+    {
+      "ts": "2026-06-20T17:30:54.207452Z",
+      "attempt": 5,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:30:57.621839Z",
+      "attempt": 6,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:30:58.919143Z",
+      "attempt": 6,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:31:03.984313Z",
+      "attempt": 6,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xf71039baf925b3386443ed4da01125b275c36a2ae61533af5c4bb5706d0f9f28"
+    },
+    {
+      "ts": "2026-06-20T17:31:05.275319Z",
+      "attempt": 6,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:08.853321Z",
+      "attempt": 7,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:31:10.236894Z",
+      "attempt": 7,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:31:15.515412Z",
+      "attempt": 7,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x48dbe771dcd12ca45e93068b8ef409c990301ff7ad1416b6d114e9336381f773"
+    },
+    {
+      "ts": "2026-06-20T17:31:16.751614Z",
+      "attempt": 7,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:20.206608Z",
+      "attempt": 8,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:31:21.649455Z",
+      "attempt": 8,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:31:26.801609Z",
+      "attempt": 8,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xfc894c6e2d82b829615ad9ad1ee88799b826a7a55a4ebf870d350a8a5f009901"
+    },
+    {
+      "ts": "2026-06-20T17:31:28.116030Z",
+      "attempt": 8,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:31.747615Z",
+      "attempt": 9,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:31:33.014098Z",
+      "attempt": 9,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.505
+    },
+    {
+      "ts": "2026-06-20T17:31:38.066104Z",
+      "attempt": 9,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x6933418a77cbe8c3d681794aa2bf5e693d28ac83016bc880ef5185bad5382283"
+    },
+    {
+      "ts": "2026-06-20T17:31:39.310164Z",
+      "attempt": 9,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:42.950439Z",
+      "attempt": 10,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:31:44.417625Z",
+      "attempt": 10,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:49.870292Z",
+      "attempt": 10,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x161ad066eea4fd1dbd22985584557eca3c97a22fce20fe0ba2186134ea536a5b"
+    },
+    {
+      "ts": "2026-06-20T17:31:51.180174Z",
+      "attempt": 10,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:31:54.646408Z",
+      "attempt": 11,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:31:56.040625Z",
+      "attempt": 11,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:01.405485Z",
+      "attempt": 11,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x702afe6351364c20d0a4adc8bfc17ad38f235057425e8defcc5624451fb51e5e"
+    },
+    {
+      "ts": "2026-06-20T17:32:02.706583Z",
+      "attempt": 11,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:06.267100Z",
+      "attempt": 12,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:32:07.774912Z",
+      "attempt": 12,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:12.808503Z",
+      "attempt": 12,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x5fdbfa6d5213a77f3cb90029cd6dd2777f5f0049f54f8b5717a5a6cd058f4c4d"
+    },
+    {
+      "ts": "2026-06-20T17:32:14.061679Z",
+      "attempt": 12,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:17.524266Z",
+      "attempt": 13,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:32:18.766897Z",
+      "attempt": 13,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:23.942492Z",
+      "attempt": 13,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xca514be96eacbd1d2aa3e621ea2a8d483e9f3d37f9c5723cbcadbb95427b77d5"
+    },
+    {
+      "ts": "2026-06-20T17:32:25.277504Z",
+      "attempt": 13,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:28.885640Z",
+      "attempt": 14,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:32:30.161408Z",
+      "attempt": 14,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:35.193121Z",
+      "attempt": 14,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xc0c1a3419e23107d189fbca56f8408ed263ce06e2853482e0a6b676b37271129"
+    },
+    {
+      "ts": "2026-06-20T17:32:36.452657Z",
+      "attempt": 14,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:40.081988Z",
+      "attempt": 15,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:32:41.398880Z",
+      "attempt": 15,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:46.492435Z",
+      "attempt": 15,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0xff5944152ba839ab3b8f140c94a51018e6f3dcf5dfe9e874663b455d0b6dc9b4"
+    },
+    {
+      "ts": "2026-06-20T17:32:47.766807Z",
+      "attempt": 15,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:51.230371Z",
+      "attempt": 16,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:32:52.498434Z",
+      "attempt": 16,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:32:57.622505Z",
+      "attempt": 16,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x918ed0cdb53dcb5b50095e8fb8a068f6232ec2ffe9fdc0567f77a6239bb1daa7"
+    },
+    {
+      "ts": "2026-06-20T17:32:58.977914Z",
+      "attempt": 16,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:02.754153Z",
+      "attempt": 17,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:04.078071Z",
+      "attempt": 17,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:09.280555Z",
+      "attempt": 17,
+      "order_type": "GTC_POLL",
+      "status": "live",
+      "order_id": "0x8e5e91225531391505cfcb5dbcb028ce98df001fb5082b034e406104accc9c14"
+    },
+    {
+      "ts": "2026-06-20T17:33:10.493284Z",
+      "attempt": 17,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:13.933414Z",
+      "attempt": 18,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:15.238778Z",
+      "attempt": 18,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:20.306073Z",
+      "attempt": 18,
+      "order_type": "GTC_POLL",
+      "status": "",
+      "order_id": "0x0df409c6041c7add645381e82c4654b105618d31de277ae507fe2c117333a049"
+    },
+    {
+      "ts": "2026-06-20T17:33:21.704932Z",
+      "attempt": 18,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:25.179628Z",
+      "attempt": 19,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:26.589916Z",
+      "attempt": 19,
+      "order_type": "GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:31.709058Z",
+      "attempt": 19,
+      "order_type": "GTC_POLL",
+      "status": "",
+      "order_id": "0x4ed46b91f749c84cfd38a0a1c291d979d83490522b0123b4e18b2f3990d2ef32"
+    },
+    {
+      "ts": "2026-06-20T17:33:33.067677Z",
+      "attempt": 19,
+      "order_type": "FORCE_GTC",
+      "status": "live",
+      "close_skipped": "",
+      "limit_price": 0.01
+    },
+    {
+      "ts": "2026-06-20T17:33:35.832646Z",
+      "attempt": 20,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:38.467380Z",
+      "attempt": 21,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:41.103037Z",
+      "attempt": 22,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:43.760383Z",
+      "attempt": 23,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:46.523822Z",
+      "attempt": 24,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:49.182823Z",
+      "attempt": 25,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:51.904086Z",
+      "attempt": 26,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:54.726750Z",
+      "attempt": 27,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:33:57.399116Z",
+      "attempt": 28,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:34:00.114961Z",
+      "attempt": 29,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T17:34:02.777135Z",
+      "attempt": 30,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    }
+  ],
+  "close_fallback": {
+    "type": "GTC_LIMIT",
+    "price": 0.01
+  },
+  "close_force": {
+    "type": "FORCE_GTC_LIMIT",
+    "price": 0.01,
+    "cancel_info": {
+      "not_canceled": {},
+      "canceled": [
+        "0x0ba90bb847bde46b48f28fc8736f0e5a3e93b9cc77744c5c06e0682a7c4677fc",
+        "0x4ed46b91f749c84cfd38a0a1c291d979d83490522b0123b4e18b2f3990d2ef32"
+      ]
+    }
+  },
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"success\": false, \"status\": \"error\", \"errorMsg\": \"book_fetch_failed: PolyApiException[status_code=404, error_message={'error': 'No orderbook exists for the requested token id'}]\"}, \"market_slug\": \"btc-updown-5m-1781976300\", \"token_id\": \"115535270859794069456226299839288618193925334978494002922374605765640323253716\"}\n\n[py_clob_client_v2] request error status=404 url=https://clob.polymarket.com/book body={\"error\":\"No orderbook exists for the requested token id\"}\n\n",
+  "closed": {
+    "close_reason": "time_exit_5s_before_end",
+    "closed_at": "2026-06-20T17:34:15.807741Z",
+    "close_success": false,
+    "close_status": null,
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 0.0,
+    "close_shares_requested": 0.0,
+    "close_usdc": 2.043329,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 36.723161,
+    "pusd_balance_after_close": 48.606459,
+    "position_closed_on_chain": false,
+    "close_settle_wait_sec": 10.85,
+    "close_skipped": null
+  },
+  "realized_cashflow_pnl_usdc": -3.04873,
+  "finished_at": "2026-06-20T17:34:15.807772Z",
+  "result": "done"
+}

@@ -1,0 +1,314 @@
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={"error":"Could not create api key"}
+
+{
+  "started_at": "2026-06-20T15:01:15.997298Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.7,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.25,
+    "exit_before_sec": 20,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T15:01:16.586552Z",
+      "slug": "btc-updown-5m-1781967600",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.34,
+      "clob_down_ask": 0.67,
+      "seconds_left": 223.87171292304993,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T15:01:16.586583Z",
+      "slug": "btc-updown-5m-1781967600",
+      "status": "skip_price_below_threshold",
+      "threshold": 0.7,
+      "clob_up_ask": 0.34,
+      "clob_down_ask": 0.67,
+      "seconds_left": 223.87171292304993
+    },
+    {
+      "ts": "2026-06-20T15:01:19.074236Z",
+      "slug": "btc-updown-5m-1781967600",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.34,
+      "clob_down_ask": 0.67,
+      "seconds_left": 221.25518584251404,
+      "min_spread": 0.010000000000000009
+    },
+    {
+      "ts": "2026-06-20T15:01:19.074269Z",
+      "slug": "btc-updown-5m-1781967600",
+      "status": "skip_price_below_threshold",
+      "threshold": 0.7,
+      "clob_up_ask": 0.34,
+      "clob_down_ask": 0.67,
+      "seconds_left": 221.25518584251404
+    },
+    {
+      "ts": "2026-06-20T15:01:21.467850Z",
+      "slug": "btc-updown-5m-1781967600",
+      "status": "heartbeat",
+      "gamma_up": 0.485,
+      "gamma_down": 0.515,
+      "clob_up_ask": 0.29,
+      "clob_down_ask": 0.72,
+      "seconds_left": 218.8660340309143,
+      "min_spread": 0.009999999999999953
+    }
+  ],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x2fb636a9e19b15823a805da5f197d8d7ce20a61ae958589c1612795bfa8f0762\", \"takingAmount\": \"6.689188\", \"makingAmount\": \"4.949999\", \"status\": \"matched\", \"transactionsHashes\": [\"0x635d5c8cc20ecc47a9187a26c7bc05f1d3e34851c94dcbf175d3f345324aadfb\"], \"success\": true}, \"entry_price\": 0.7399999820606029, \"market_slug\": \"btc-updown-5m-1781967600\", \"token_id\": \"84750391103314893432154543072643393504883390655927864050075248684028230767891\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T15:01:23.459350Z",
+    "market_slug": "btc-updown-5m-1781967600",
+    "market_end_iso": "2026-06-20T15:05:00Z",
+    "side": "DOWN",
+    "token_id": "84750391103314893432154543072643393504883390655927864050075248684028230767891",
+    "entry_price": 0.7399999820606029,
+    "shares": 6.689188,
+    "cost_usdc": 4.949999,
+    "open_order_id": "0x2fb636a9e19b15823a805da5f197d8d7ce20a61ae958589c1612795bfa8f0762",
+    "open_tx": "0x635d5c8cc20ecc47a9187a26c7bc05f1d3e34851c94dcbf175d3f345324aadfb"
+  },
+  "stop_loss_price": 0.5549999865454522,
+  "last_side_price": 0.515,
+  "last_check_at": "2026-06-20T15:01:23.504135Z",
+  "close_debug": [
+    {
+      "ts": "2026-06-20T15:01:25.849294Z",
+      "attempt": 1,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:29.215334Z",
+      "attempt": 2,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:32.770943Z",
+      "attempt": 3,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:36.227690Z",
+      "attempt": 4,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:39.729509Z",
+      "attempt": 5,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:43.218513Z",
+      "attempt": 6,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:46.707716Z",
+      "attempt": 7,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:50.088016Z",
+      "attempt": 8,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:53.510082Z",
+      "attempt": 9,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:01:59.658134Z",
+      "attempt": 10,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:03.134005Z",
+      "attempt": 11,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:06.801397Z",
+      "attempt": 12,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:10.159295Z",
+      "attempt": 13,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:13.666994Z",
+      "attempt": 14,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:17.119872Z",
+      "attempt": 15,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:20.485536Z",
+      "attempt": 16,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:23.952866Z",
+      "attempt": 17,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:27.465005Z",
+      "attempt": 18,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:30.939844Z",
+      "attempt": 19,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:34.409021Z",
+      "attempt": 20,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:37.767835Z",
+      "attempt": 21,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:41.244056Z",
+      "attempt": 22,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:44.579888Z",
+      "attempt": 23,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:48.035696Z",
+      "attempt": 24,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:51.531832Z",
+      "attempt": 25,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:55.114101Z",
+      "attempt": 26,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:02:58.547318Z",
+      "attempt": 27,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:03:05.678979Z",
+      "attempt": 28,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:03:09.029446Z",
+      "attempt": 29,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    },
+    {
+      "ts": "2026-06-20T15:03:13.730307Z",
+      "attempt": 30,
+      "order_type": "FAK",
+      "status": "",
+      "close_skipped": ""
+    }
+  ],
+  "close_raw": "{\"close_skipped\": \"\", \"order_post_result\": {\"success\": false, \"status\": \"error\", \"errorMsg\": \"PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 9188, order amount: 6680000'}]\"}, \"market_slug\": \"btc-updown-5m-1781967600\", \"token_id\": \"84750391103314893432154543072643393504883390655927864050075248684028230767891\", \"side\": \"SELL\", \"price\": 0.01, \"size\": 6.689188, \"neg_risk\": false, \"execute\": true}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/auth/api-key body={\"error\":\"Could not create api key\"}\n\n[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={\"error\":\"not enough balance / allowance: the balance is not enough -\\u003e balance: 9188, order amount: 6680000\"}\n",
+  "closed": {
+    "close_reason": "stop_loss_25pct",
+    "closed_at": "2026-06-20T15:03:15.734085Z",
+    "close_success": false,
+    "close_status": null,
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 0.0,
+    "close_usdc": 0.0,
+    "close_skipped": null
+  },
+  "realized_cashflow_pnl_usdc": null,
+  "finished_at": "2026-06-20T15:03:15.734185Z",
+  "result": "done"
+}

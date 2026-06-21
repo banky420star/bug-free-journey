@@ -1,0 +1,79 @@
+{
+  "started_at": "2026-06-20T20:21:40.571047Z",
+  "params": {
+    "profile": "conservative",
+    "threshold": 0.62,
+    "max_entry_price": 0.75,
+    "stake_usd": 5.0,
+    "stop_loss_pct": 0.0,
+    "exit_before_sec": 5,
+    "min_entry_seconds_left": 60,
+    "entry_timeout_min": 5,
+    "poll_sec": 2.0,
+    "close_retry_max": 30,
+    "close_retry_delay_sec": 2.0,
+    "execute": true
+  },
+  "attempts": [
+    {
+      "ts": "2026-06-20T20:21:40.992030Z",
+      "slug": "sol-updown-5m-1781986800",
+      "status": "heartbeat",
+      "gamma_up": 0.315,
+      "gamma_down": 0.685,
+      "clob_up_ask": 0.37,
+      "clob_down_ask": 0.64,
+      "seconds_left": 199.38589906692505,
+      "min_spread": 0.010000000000000009
+    }
+  ],
+  "balance_errors": [],
+  "open_raw": "{\"order_post_result\": {\"errorMsg\": \"\", \"orderID\": \"0x3c60aa7165a99bc2bd920a026c28aa1511aedcc2f5abf5ea9a07c374b9822adb\", \"takingAmount\": \"7.734375\", \"makingAmount\": \"4.95\", \"status\": \"matched\", \"transactionsHashes\": [\"0x7ebefb25492aa1d6cc7693b34c7282ab53a136946a092de8d16652e31d8512dd\"], \"success\": true}, \"entry_price\": 0.64, \"market_slug\": \"sol-updown-5m-1781986800\", \"token_id\": \"97772042344229259682294230095347416459018137323287856453742882170918552870220\", \"side\": \"DOWN\", \"best_bid\": 0.01, \"best_ask\": 0.99, \"price\": 0.99, \"size\": 5.0, \"budget_usd\": 5.0, \"min_order_size\": 5.0, \"neg_risk\": false, \"execute\": true}\n\n",
+  "opened": {
+    "opened_at": "2026-06-20T20:21:44.668014Z",
+    "market_slug": "sol-updown-5m-1781986800",
+    "market_end_iso": "2026-06-20T20:25:00Z",
+    "side": "DOWN",
+    "token_id": "97772042344229259682294230095347416459018137323287856453742882170918552870220",
+    "entry_price": 0.656128,
+    "shares": 7.734375,
+    "shares_requested": 7.734375,
+    "cost_usdc": 5.07474,
+    "cost_requested_usdc": 4.95,
+    "ctf_balance_after_open": 7.734375,
+    "pusd_balance_after_open": 23.896187,
+    "settle_wait_sec": 1.54,
+    "balance_unconfirmed": false,
+    "open_order_id": "0x3c60aa7165a99bc2bd920a026c28aa1511aedcc2f5abf5ea9a07c374b9822adb",
+    "open_tx": "0x7ebefb25492aa1d6cc7693b34c7282ab53a136946a092de8d16652e31d8512dd"
+  },
+  "stop_loss_price": null,
+  "close_debug": [
+    {
+      "ts": "2026-06-20T20:25:30.455984Z",
+      "mode": "hold_to_settlement",
+      "redeem_wait_sec": 29.24,
+      "ctf_remaining": 0.0
+    }
+  ],
+  "closed": {
+    "close_reason": "held_to_settlement",
+    "closed_at": "2026-06-20T20:25:30.455974Z",
+    "close_success": true,
+    "close_status": "redeemed",
+    "close_order_id": null,
+    "close_tx": null,
+    "close_shares": 7.734375,
+    "close_shares_requested": 7.734375,
+    "close_usdc": 7.734375,
+    "close_usdc_requested": 0.0,
+    "ctf_remaining": 0.0,
+    "pusd_balance_after_close": 31.630562,
+    "position_closed_on_chain": true,
+    "close_settle_wait_sec": 29.24,
+    "close_skipped": ""
+  },
+  "realized_cashflow_pnl_usdc": 2.659635,
+  "finished_at": "2026-06-20T20:25:30.455987Z",
+  "result": "done"
+}
