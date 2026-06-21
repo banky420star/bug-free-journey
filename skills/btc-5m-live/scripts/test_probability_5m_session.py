@@ -9,7 +9,7 @@ Important accounting rule:
   trade can overlap.
 - For a long binary YES/NO token held to settlement, max loss is the entry cost
   and payoff is approximately `shares` when the token wins, otherwise 0.
-- This runner therefore records per-trade PnL from token settlement state:
+- This runner records per-trade PnL from token settlement state:
       pnl = (shares if redeemed/won else 0) - cost
   and clamps impossible values.
 """
@@ -73,17 +73,10 @@ def wait_for_settlement(client, token_id: str, errors: list, timeout: float = 18
 
 
 def compute_binary_pnl(shares: float, cost: float, token_redeemed: bool) -> tuple[float, float, str]:
-    """Return (close_usdc, pnl, source) for a long binary token.
-
-    If the winning token redeems, payoff is one pUSD per share. If it does not
-    redeem, payoff is zero. This avoids misattributing other active trades'
-    pUSD movement to this trade.
-    """
     shares = max(0.0, float(shares or 0.0))
     cost = max(0.0, float(cost or 0.0))
     close_usdc = round(shares if token_redeemed else 0.0, 6)
     pnl = round(close_usdc - cost, 6)
-    # Long binary safety bounds. A $5 long cannot lose $25.
     min_pnl = -cost
     max_pnl = max(0.0, shares - cost)
     pnl = clamp(pnl, min_pnl, max_pnl)
@@ -98,29 +91,39 @@ def main() -> int:
     ap.add_argument("--stake-usd", type=float, default=5.0)
     ap.add_argument("--entry-timeout-min", type=float, default=5.0)
     ap.add_argument("--poll-sec", type=float, default=2.0)
-    ap.add_argument("--min-edge", type=float, default=0.08)
-    ap.add_argument("--max-entry-price", type=float, default=0.78)
-    ap.add_argument("--max-spread", type=float, default=0.04)
-    ap.add_argument("--min-top-ask-notional", type=float, default=5.0)
-    ap.add_argument("--min-distance-pct", type=float, default=0.00035)
-    ap.add_argument("--min-entry-seconds-left", type=float, default=45.0)
-    ap.add_argument("--max-entry-seconds-left", type=float, default=165.0)
+    ap.add_argument("--min-edge", type=float, default=0.12)
+    ap.add_argument("--min-model-prob", type=float, default=0.78)
+    ap.add_argument("--min-z-abs", type=float, default=1.10)
+    ap.add_argument("--min-entry-price", type=float, default=0.22)
+    ap.add_argument("--max-entry-price", type=float, default=0.70)
+    ap.add_argument("--max-spread", type=float, default=0.03)
+    ap.add_argument("--min-top-ask-notional", type=float, default=8.0)
+    ap.add_argument("--min-distance-pct", type=float, default=0.00055)
+    ap.add_argument("--min-distance-vs-sigma", type=float, default=0.45)
+    ap.add_argument("--min-quality-score", type=float, default=4.0)
+    ap.add_argument("--min-entry-seconds-left", type=float, default=55.0)
+    ap.add_argument("--max-entry-seconds-left", type=float, default=135.0)
     ap.add_argument("--execute", action="store_true")
     args = ap.parse_args()
 
     cfg = ps.SignalConfig(
         min_edge=args.min_edge,
+        min_model_prob=args.min_model_prob,
+        min_z_abs=args.min_z_abs,
+        min_entry_price=args.min_entry_price,
         max_entry_price=args.max_entry_price,
         max_spread=args.max_spread,
         min_top_ask_notional=args.min_top_ask_notional,
         min_distance_pct=args.min_distance_pct,
+        min_distance_vs_sigma=args.min_distance_vs_sigma,
         min_seconds_left=args.min_entry_seconds_left,
         max_seconds_left=args.max_entry_seconds_left,
+        min_quality_score=args.min_quality_score,
     )
 
     report: dict[str, Any] = {
         "started_at": ts_utc(),
-        "strategy": "probability_distance_to_strike_v1_safe_pnl",
+        "strategy": "probability_sniper_v2_safe_pnl",
         "params": vars(args),
         "attempts": [],
         "balance_errors": [],
@@ -178,9 +181,6 @@ def main() -> int:
                 time.sleep(args.poll_sec)
                 continue
 
-            # Do NOT use whole-wallet pUSD delta for cost here. With overlapping
-            # trades it is contaminated. Use actual CTF shares times bounded fill
-            # price. This keeps entry_price within 0..1 and loss bounded by cost.
             fill_price = safe_price(runner.get("entry_price"), fallback=ask)
             cost = round(shares * fill_price, 6)
             requested_cost = 0.0
@@ -189,8 +189,6 @@ def main() -> int:
             except Exception:
                 requested_cost = 0.0
             if 0 < requested_cost <= max(stake * 1.20, cost * 1.20):
-                # If the SDK-reported making amount is sane, keep it. Otherwise
-                # trust token shares × bounded fill price.
                 cost = round(requested_cost, 6)
                 if shares > 0:
                     fill_price = safe_price(cost / shares, fallback=fill_price)
