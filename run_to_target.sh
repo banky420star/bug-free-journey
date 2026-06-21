@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
-# Safe sequential loop for the probability-based Polymarket 5m bot.
+# Safe sequential loop for the sniper probability-based Polymarket 5m bot.
 #
-# This replaces the old grow-to-target loop because the old loop allowed
-# parallel/batch execution and progressive stake boosts. Those are unsafe while
-# per-trade PnL depends on balance reconciliation. One wallet, one live trade.
-#
-# Usage:
-#   ./run_to_target.sh --max-trades 5 --assets btc
-#   ./run_to_target.sh --assets btc,eth,sol --stake-usd 5 --min-edge 0.10
-#
-# Real orders require --execute behavior inside the runner. This script always
-# calls the probability runner with --execute, so only run after checking .env.
+# One wallet, one live trade. No parallel batches. No progressive boosts.
+# The edge improves by filtering harder, not by firing more trades.
 set -euo pipefail
 cd "$(dirname "$0")"
 export LC_NUMERIC=C
@@ -27,15 +19,25 @@ STAKE_USD="5"
 MAX_TRADES="5"
 FLOOR="15"
 DAILY_LOSS_PCT_LIMIT="0.10"
-ENTRY_TIMEOUT_MIN="5"
+ENTRY_TIMEOUT_MIN="8"
 POLL_SEC="2"
-MIN_EDGE="0.10"
-MAX_ENTRY_PRICE="0.72"
+MIN_EDGE="0.12"
+MIN_MODEL_PROB="0.78"
+MIN_Z_ABS="1.10"
+MIN_ENTRY_PRICE="0.22"
+MAX_ENTRY_PRICE="0.70"
 MAX_SPREAD="0.03"
-MIN_TOP_ASK_NOTIONAL="5"
-MIN_DISTANCE_PCT="0.00045"
-MIN_ENTRY_SECONDS_LEFT="45"
-MAX_ENTRY_SECONDS_LEFT="150"
+MIN_TOP_ASK_NOTIONAL="8"
+MIN_DISTANCE_PCT="0.00055"
+MIN_DISTANCE_VS_SIGMA="0.45"
+MIN_QUALITY_SCORE="4.0"
+MIN_ENTRY_SECONDS_LEFT="55"
+MAX_ENTRY_SECONDS_LEFT="135"
+TAKE_PROFIT_PCT="0.25"
+TAKE_PROFIT_USD="1.00"
+TAKE_PROFIT_MIN_BID="0.72"
+TAKE_PROFIT_MIN_SECONDS_LEFT="12"
+TAKE_PROFIT_CHECK_SEC="1.5"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -48,12 +50,22 @@ while [[ $# -gt 0 ]]; do
     --entry-timeout-min) ENTRY_TIMEOUT_MIN="$2"; shift 2;;
     --poll-sec) POLL_SEC="$2"; shift 2;;
     --min-edge) MIN_EDGE="$2"; shift 2;;
+    --min-model-prob) MIN_MODEL_PROB="$2"; shift 2;;
+    --min-z-abs) MIN_Z_ABS="$2"; shift 2;;
+    --min-entry-price) MIN_ENTRY_PRICE="$2"; shift 2;;
     --max-entry-price) MAX_ENTRY_PRICE="$2"; shift 2;;
     --max-spread) MAX_SPREAD="$2"; shift 2;;
     --min-top-ask-notional) MIN_TOP_ASK_NOTIONAL="$2"; shift 2;;
     --min-distance-pct) MIN_DISTANCE_PCT="$2"; shift 2;;
+    --min-distance-vs-sigma) MIN_DISTANCE_VS_SIGMA="$2"; shift 2;;
+    --min-quality-score) MIN_QUALITY_SCORE="$2"; shift 2;;
     --min-entry-seconds-left) MIN_ENTRY_SECONDS_LEFT="$2"; shift 2;;
     --max-entry-seconds-left) MAX_ENTRY_SECONDS_LEFT="$2"; shift 2;;
+    --take-profit-pct) TAKE_PROFIT_PCT="$2"; shift 2;;
+    --take-profit-usd) TAKE_PROFIT_USD="$2"; shift 2;;
+    --take-profit-min-bid) TAKE_PROFIT_MIN_BID="$2"; shift 2;;
+    --take-profit-min-seconds-left) TAKE_PROFIT_MIN_SECONDS_LEFT="$2"; shift 2;;
+    --take-profit-check-sec) TAKE_PROFIT_CHECK_SEC="$2"; shift 2;;
     --parallel)
       echo "ERROR: --parallel disabled. One wallet-level bot may only run one live trade at a time." >&2
       exit 2
@@ -136,20 +148,25 @@ DAY_START_BAL="$(get_balance)"
 TRADES_DONE=0
 ASSET_IDX=0
 
-echo "=== SAFE probability 5m loop ==="
-echo "  Assets:          $ASSETS"
-echo "  Max trades:      $MAX_TRADES"
-echo "  Stake:           \$$STAKE_USD"
-echo "  Floor:           \$$FLOOR"
-echo "  Daily loss cap:  $(python3 - <<PY
+echo "=== SAFE sniper probability 5m loop ==="
+echo "  Assets:             $ASSETS"
+echo "  Max trades:         $MAX_TRADES"
+echo "  Stake:              \$$STAKE_USD"
+echo "  Floor:              \$$FLOOR"
+echo "  Daily loss cap:     $(python3 - <<PY
 print(round(float('$DAILY_LOSS_PCT_LIMIT')*100, 1))
 PY
 )%"
-echo "  Min edge:        $MIN_EDGE"
-echo "  Max entry price: $MAX_ENTRY_PRICE"
-echo "  Max spread:      $MAX_SPREAD"
-echo "  Log CSV:         $LOOP_LOG"
-echo "  Mode:            sequential only"
+echo "  Min edge:           $MIN_EDGE"
+echo "  Min model prob:     $MIN_MODEL_PROB"
+echo "  Min z abs:          $MIN_Z_ABS"
+echo "  Entry price band:   $MIN_ENTRY_PRICE to $MAX_ENTRY_PRICE"
+echo "  Max spread:         $MAX_SPREAD"
+echo "  Min depth:          \$$MIN_TOP_ASK_NOTIONAL"
+echo "  Time window:        ${MIN_ENTRY_SECONDS_LEFT}s to ${MAX_ENTRY_SECONDS_LEFT}s left"
+echo "  Take profit:        +\$$TAKE_PROFIT_USD or ${TAKE_PROFIT_PCT} pct, min bid $TAKE_PROFIT_MIN_BID"
+echo "  Log CSV:            $LOOP_LOG"
+echo "  Mode:               sequential only"
 echo
 
 echo "Day $DAY_START starting balance: \$$(printf '%.2f' "$DAY_START_BAL")"
@@ -170,7 +187,7 @@ while [[ "$TRADES_DONE" -lt "$MAX_TRADES" ]]; do
   ASSET="${ASSET_LIST[$ASSET_IDX]}"
   ASSET_IDX=$(( (ASSET_IDX + 1) % ${#ASSET_LIST[@]} ))
   TS="$(date -u +%Y%m%dT%H%M%SZ)"
-  LOG="$RUNTIME/btc5m_probability_${ASSET}_${TS}.log"
+  LOG="$RUNTIME/btc5m_sniper_${ASSET}_${TS}.log"
   echo "[$(date -u +%H:%M:%SZ)] trade $((TRADES_DONE+1))/$MAX_TRADES asset=$ASSET balance=\$$(printf '%.2f' "$BAL")"
 
   "$VENV_PY" "$RUNNER" \
@@ -179,12 +196,22 @@ while [[ "$TRADES_DONE" -lt "$MAX_TRADES" ]]; do
     --entry-timeout-min "$ENTRY_TIMEOUT_MIN" \
     --poll-sec "$POLL_SEC" \
     --min-edge "$MIN_EDGE" \
+    --min-model-prob "$MIN_MODEL_PROB" \
+    --min-z-abs "$MIN_Z_ABS" \
+    --min-entry-price "$MIN_ENTRY_PRICE" \
     --max-entry-price "$MAX_ENTRY_PRICE" \
     --max-spread "$MAX_SPREAD" \
     --min-top-ask-notional "$MIN_TOP_ASK_NOTIONAL" \
     --min-distance-pct "$MIN_DISTANCE_PCT" \
+    --min-distance-vs-sigma "$MIN_DISTANCE_VS_SIGMA" \
+    --min-quality-score "$MIN_QUALITY_SCORE" \
     --min-entry-seconds-left "$MIN_ENTRY_SECONDS_LEFT" \
     --max-entry-seconds-left "$MAX_ENTRY_SECONDS_LEFT" \
+    --take-profit-pct "$TAKE_PROFIT_PCT" \
+    --take-profit-usd "$TAKE_PROFIT_USD" \
+    --take-profit-min-bid "$TAKE_PROFIT_MIN_BID" \
+    --take-profit-min-seconds-left "$TAKE_PROFIT_MIN_SECONDS_LEFT" \
+    --take-profit-check-sec "$TAKE_PROFIT_CHECK_SEC" \
     --execute > "$LOG" 2>&1 || true
 
   IFS='|' read -r RESULT SHARES COST CLOSE_USDC PNL SETTLE UNCONF SIDE ENTRY_PRICE <<< "$(parse_run "$LOG")"
